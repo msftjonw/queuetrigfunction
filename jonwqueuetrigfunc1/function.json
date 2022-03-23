@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "inMessage",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "inputqueue",
+      "connection": "AzureStorageQueuesConnectionString"
+    },
+    {
+      "name": "outMessage",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "outputqueue",
+      "connection": "AzureStorageQueuesConnectionString"
+    }
+  ]
+}
